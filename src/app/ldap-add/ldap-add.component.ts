@@ -20,6 +20,7 @@ export class LdapAddComponent extends LdapDetailComponent  {
 
   ngOnInit(): void {
     super.onInit(); 
+    console.log("add");
 
   }
 

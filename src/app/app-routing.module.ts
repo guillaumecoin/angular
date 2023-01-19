@@ -7,9 +7,9 @@ import { LdapListComponent } from './ldap-list/ldap-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 const routes: Routes = [
   {path: 'users/list', component: LdapListComponent },
-  { path: 'user/:id', component: LdapEditComponent },
   { path: 'user/add', component: LdapAddComponent },
-  { path: '**', component: PageNotFoundComponent },
+  { path: 'user/:id', component: LdapEditComponent },
+  { path: '**', component: PageNotFoundComponent }
   
   
 ];

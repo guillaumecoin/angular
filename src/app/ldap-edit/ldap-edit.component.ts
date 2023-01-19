@@ -20,6 +20,7 @@ export class LdapEditComponent extends LdapDetailComponent  {
   ngOnInit(): void {
     super.onInit(); 
     this.getUser();
+    console.log("edit");
   }
 
   private getUser():void {

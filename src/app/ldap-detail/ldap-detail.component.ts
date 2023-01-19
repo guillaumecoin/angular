@@ -19,7 +19,7 @@ export abstract class LdapDetailComponent {
   protected constructor( 
     public addForm: boolean,
     private fb: FormBuilder,
-    private router:Router,
+    private router:Router
      ) 
   {
     this.passwordPlaceHolder = 'Mot de passe'+(this.addForm ? '' : '(vide si inchangé)');

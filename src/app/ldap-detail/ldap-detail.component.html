@@ -5,10 +5,10 @@
     {{ addForm ? "Ajout d'un utilisateur" : "Edition d'un utilisateur" }}
 </h3>
 
-<!-- <section class="loading" *ngIf="processLoadRunning==true">
+<section class="loading" *ngIf="processLoadRunning==true">
 <mat-spinner diameter="25"></mat-spinner>
 <span>&nbsp; En cours de chargement ...</span>
-</section> -->
+</section>
 
 <app-alert *ngIf="errorMessage.length>0" [type]="'danger'">{{errorMessage}}</app-alert>
 
