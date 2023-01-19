@@ -4,7 +4,7 @@ import { Location } from '@angular/common';
 import { UsersService } from '../service/users.service';
 import { UserLdap } from '../model/user-Idap';
 import { FormBuilder } from '@angular/forms';
-
+import { MatInput } from '@angular/material/input';
 @Component({
   selector: 'app-ldap-detail',
   templateUrl: './ldap-detail.component.html',

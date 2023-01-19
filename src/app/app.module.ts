@@ -36,7 +36,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppMaterialModule,
     LayoutModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
 
   ],
   providers: [],
