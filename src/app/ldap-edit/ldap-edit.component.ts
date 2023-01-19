@@ -21,6 +21,8 @@ export class LdapEditComponent extends LdapDetailComponent  {
     super.onInit(); 
     this.getUser();
     console.log("edit");
+    this.processLoadRunning= false;
+
   }
 
   private getUser():void {
