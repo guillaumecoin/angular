@@ -13,7 +13,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatInputModule} from '@angular/material/input';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSelectModule } from '@angular/material/select';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [],
@@ -38,7 +40,10 @@ import {MatInputModule} from '@angular/material/input';
     MatListModule,
     MatFormFieldModule,
     MatSlideToggleModule,
-    MatInputModule
+    MatInputModule,
+    MatTooltipModule,
+    MatSelectModule,
+    MatProgressSpinnerModule
   ]
  
 })
