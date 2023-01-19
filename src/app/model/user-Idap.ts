@@ -3,7 +3,7 @@ export interface UserLdap {
     nom: string;
     prenom: string;
     nomComplet: string;
-    MotDePasse: string;
+    motDePasse: string;
     mail: string;
     role: string;
     employeNumero: number;
