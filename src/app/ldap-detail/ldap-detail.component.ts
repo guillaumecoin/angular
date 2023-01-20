@@ -93,6 +93,7 @@ export abstract class LdapDetailComponent {
 
   protected getUserFromFormCOntrol(): UserLdap {
     return {
+      id: this.addForm ? undefined : this.user.id,
       login: this.userForm.get('login').value,
       nom: this.userForm.get('nom').value,
       prenom: this.userForm.get('prenom').value,

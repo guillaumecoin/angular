@@ -21,20 +21,17 @@ export class LdapEditComponent extends LdapDetailComponent  {
     super.onInit(); 
     this.getUser();
     console.log("edit");
-    this.processLoadRunning= false;
-
   }
 
   private getUser():void {
-    const login = this.route.snapshot.paramMap.get('id');
-
+    const id = +this.route.snapshot.paramMap.get('id');
     this.processLoadRunning= true;
 
-    this.usersService.getUser(login).subscribe(
+    this.usersService.getUser(id).subscribe(
       user => {
         this.user = user; 
         this.copyUserToFormControl();
-        this.processLoadRunning= true; 
+        this.processLoadRunning= false; 
       },
       error =>{
         this.processLoadRunning = false;
