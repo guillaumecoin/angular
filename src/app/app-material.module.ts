@@ -19,9 +19,6 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule
-  ],
   exports: [
     BrowserAnimationsModule,
     LayoutModule,
