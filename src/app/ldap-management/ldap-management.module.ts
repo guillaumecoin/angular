@@ -13,30 +13,28 @@ import { LdapListComponent } from '../ldap-list/ldap-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryUsersService } from '../service/in-memory-users.service';
-
+import {MatCardModule} from '@angular/material/card';
+import { LoginComponent } from '../security/login/login.component';
 
 @NgModule({
-  declarations: [
-    LdapListComponent,
-    LdapAddComponent,
-    LdapEditComponent,
-    AlertComponent,
- 
-  ],
-  imports: [
-    CommonModule,
-    BrowserModule,
-   FormsModule,
-   ReactiveFormsModule,
-   AppMaterialModule,
-    LdapManagementRoutingModule,
-    HttpClientModule,
-
-    HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryUsersService, {dataEncapsulation: false}
-    )
- 
-
-  ]
+    declarations: [
+      NavbarComponent,
+        LdapListComponent,
+        LdapAddComponent,
+        LdapEditComponent,
+        AlertComponent,
+    ],
+    imports: [
+        CommonModule,
+        BrowserModule,
+        FormsModule,
+        ReactiveFormsModule,
+        AppMaterialModule,
+        LdapManagementRoutingModule,
+        HttpClientModule,
+        MatCardModule,
+        HttpClientInMemoryWebApiModule.forRoot(InMemoryUsersService, { dataEncapsulation: false }),
+        
+    ]
 })
 export class LdapManagementModule { }
